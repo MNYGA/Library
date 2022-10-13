@@ -12,10 +12,8 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
-/**
- * do jakich pól generować @EqualsAndHashcode?
- *  Czy @ToString?
- */
+//@EqualsAndHashCode(exclude = {"book", "password", "role"})
+@ToString
 
 
 public class User {
@@ -33,8 +31,13 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserLevel role;
 
-    // relacja ManyToMAny
-    //public Set<Book> book = new HashSet<>();
+//    @ManyToMany
+//    @JoinTable(
+//            name = "rentals",
+//            joinColumns = @JoinColumn(name = "book_id"),
+//            inverseJoinColumns = @JoinColumn(name = "user_id")
+//    )
+//    public Set<Book> book = new HashSet<>();
 
     //DTO
     }
