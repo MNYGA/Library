@@ -12,7 +12,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
-//@EqualsAndHashCode(exclude = {"book", "password", "role"})
+@EqualsAndHashCode(exclude = {"book", "password", "role"})
 @ToString
 
 
@@ -31,13 +31,13 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserLevel role;
 
-//    @ManyToMany
-//    @JoinTable(
-//            name = "rentals",
-//            joinColumns = @JoinColumn(name = "book_id"),
-//            inverseJoinColumns = @JoinColumn(name = "user_id")
-//    )
-//    public Set<Book> book = new HashSet<>();
+    @ManyToMany
+    @JoinTable(
+            name = "rentals",
+            joinColumns = @JoinColumn(name = "book_id"),
+            inverseJoinColumns = @JoinColumn(name = "user_id")
+    )
+    public Set<Book> book = new HashSet<>();
 
     //DTO
     }

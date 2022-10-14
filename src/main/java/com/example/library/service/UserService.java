@@ -13,13 +13,16 @@ public class UserService {
 
     private UserRepo userRepo;
 
-    @Autowired
+
     public UserService(UserRepo userRepo) {
         this.userRepo = userRepo;
     }
     @EventListener(ApplicationReadyEvent.class)
     public void runExample(){
-      User user = new User(1L, "Marta", "pisz", "123", UserLevel.USER);
+      User user = new User(1L, "Marta", "pisz", "123", UserLevel.USER, null);
       userRepo.save(user);
+
+        User user1 = new User(2L, "Marek", "pissz", "123", UserLevel.USER, null);
+        userRepo.save(user1);
     }
 }
