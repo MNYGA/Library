@@ -1,0 +1,23 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: rober
+  Date: 30.05.2022
+  Time: 18:21
+  To change this template use File | Settings | File Templates.
+  // Czy to też opakowywać w c:url, skoro to nie link, tylko script? po opakowaniu wywaliło error 500 i errory w konsoli
+--%>
+
+
+<!-- Vendor JS Files -->
+<script src='<c:url value ="/resources/assets/vendor/purecounter/purecounter.js"/>'></script>
+<script src='<c:url value ="/resources/assets/vendor/aos/aos.js"/>'></script>
+<script src='<c:url value ="/resources/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"/></script>
+<script src='<c:url value ="/resources/assets/vendor/glightbox/js/glightbox.min.js"/>'></script>
+<script src='<c:url value ="/resources/assets/vendor/isotope-layout/isotope.pkgd.min.js"/>'></script>
+<script src='<c:url value ="/resources/assets/vendor/swiper/swiper-bundle.min.js"/>'></script>
+<script src='<c:url value ="/resources/assets/vendor/typed.js/typed.min.js"/>'></script>
+<script src='<c:url value ="/resources/assets/vendor/waypoints/noframework.waypoints.js"/>'></script>
+<script src='<c:url value ="/resources/assets/vendor/php-email-form/validate.js"/>'></script>
+
+<!-- Template Main JS File -->
+<script src='<c:url value ="/resources/js/main.js"/>'></script>
